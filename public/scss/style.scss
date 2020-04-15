@@ -81,6 +81,22 @@ $text-color-primary: #1c1c1c;
 
 html {
     font-size: 62.5%;   //1rem = 10px 10px/16 62.5%
+
+    @include respond(desktop-md) {
+      font-size: 55%;
+    }
+
+    @include respond(desktop-sm) {
+      font-size: 50%;
+    }
+
+    @include respond(desktop-xsm) {
+      font-size: 45%;
+    }
+
+    @include respond(desktop-xxsm) {
+      font-size: 40%;
+    }
 }
 
 body {
@@ -88,6 +104,7 @@ body {
     font-size: 1rem;
     font-family: Arial, Helvetica, sans-serif;
     color: $text-color-primary;
+    overflow-x: hidden;
     // font-family: 'Open Sans', sans-serif;
     // font-family: 'Source Sans Pro', sans-serif;
 }
@@ -166,6 +183,10 @@ body {
     border: 0;
   }
 
+  .nav {
+    z-index: 1000;
+  }
+
   & .nav,
   & .toolbar {
     padding: 1.2rem 2.5rem;
@@ -175,10 +196,6 @@ body {
     @include flexbox;
     font-family: 'Open Sans', sans-serif;
     align-items: center;
-
-    @include respond(desktop-xxl) {
-      max-width: 108rem;
-    }
     
 
     @include respond(desktop-md) {
@@ -381,6 +398,10 @@ body {
     }
   }
 
+  & .nav {
+    z-index: 100%;
+  }
+
   & .toolbar {
     position: relative;
     height: 0;
@@ -398,3 +419,264 @@ body {
     }
   }
 }
+
+.main {
+  padding: 0 2.5rem;
+  padding-left: 3rem;
+  margin: 0 auto;
+  max-width: 130rem;
+
+  @include respond(desktop-md) {
+    padding: 0 2.5rem;
+  }
+}
+
+.section-hero {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include respond(desktop-md) {
+    margin-top: 4.6rem;
+    flex-direction: column;
+    padding: 0 10%;
+  }
+
+
+  @include respond(desktop-xsm) {
+    text-align: center;
+    flex-direction: column;
+    padding: 0 5%;
+  }
+
+  @include respond(desktop-xxsm) {
+    padding: 0;
+  }
+
+  &-main  {
+    width: 48%;
+
+    @include respond(desktop-md) {
+      width: 100%;
+      margin-bottom: 3.6rem;
+    }
+
+    &-title-small {
+      margin-bottom: 1rem;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 1.15;
+      color: #4a4b4d;
+    }
+
+    &-title {
+      margin-bottom: 3.6rem;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 4.2rem;
+      font-weight: 700;
+      line-height: 1.24;
+      letter-spacing: -1.05px;
+    }
+
+    &-text {
+      font-size: 1.9rem;
+      line-height: 1.42;
+      letter-spacing: 0.19px;
+      color: #191919;
+    }
+
+    &-buttons {
+      margin-top: 4.6rem;
+      margin-bottom: 1.3rem;
+      display: flex;
+      align-items: center;
+      
+
+      @include respond(desktop-xsm) {
+        flex-wrap: wrap;
+      }
+      
+      & .btn {
+        padding: 1.9rem 5.3rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+        letter-spacing: 0.15px;
+
+        &:not(:last-of-type) {
+          margin-right: 2.2rem;
+
+          @include respond(desktop-xsm) {
+            margin-right: 0;
+            margin-bottom: 1.3rem;
+          }
+        }
+
+        @include respond(desktop-md) {
+          width: 49.5%;
+        }
+        @include respond(desktop-xsm) {
+          margin-right: 0;
+          width: 100%;
+        }
+      }
+    }
+
+    &-small-text {
+      margin-left: 1.2rem;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1.25rem;
+      line-height: 1.28;
+      letter-spacing: 0.13px;
+      color: #5f5f5f;
+    }
+  }
+
+  &-img {
+    width: auto;
+    max-width: 50%;
+   
+
+    @include respond(desktop-md) {
+      width: auto;
+      max-width: 100%;
+    }
+  }
+
+}
+
+.section-video {
+  margin-top: 10rem;
+  text-align: center;
+
+  &-title {
+    margin-bottom: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.48;
+    letter-spacing: -0.4px;
+  }
+
+  &-text {
+    margin-bottom: 3.8rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.44;
+    letter-spacing: 0.18px;
+  }
+  & video {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 80rem;
+  }
+}
+
+.section-about {
+  &.one {
+    & .section-about-main {
+      max-width: 35rem;
+    }
+  }
+
+  &.two {
+    flex-direction: row-reverse;
+
+    & .section-about-main {
+      max-width: 56.5rem;
+    }
+  }
+
+  &.three {
+
+    & .section-about-main {
+      max-width: 55.5rem;
+    }
+  }
+
+  &.four {
+    flex-direction: row-reverse;
+
+    & .section-about-main {
+      max-width: 52.8rem;
+    }
+  }
+}
+
+.section-about {
+  margin-top: 9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  @include respond(desktop-sm) {
+    flex-direction: column!important;
+    padding: 0 10%;
+  }
+
+  @include respond(desktop-xsm) {
+    padding: 0 5%;
+  }
+
+  @include respond(desktop-xsm) {
+    padding: 0;
+  }
+
+  
+
+  &-main {
+
+    @include respond(desktop-sm) {
+      max-width: 100%;
+    }
+
+    &-title {
+      margin-bottom: 2.1rem;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 4.9rem;
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.34px;
+    }
+
+    &-text {
+      margin-bottom: 1.7rem;
+      font-size: 19px;
+      font-weight: 400;
+      line-height: 1.37;
+      letter-spacing: 0.19px;
+    }
+
+    &-link {
+      display: inline-flex;
+      align-items: center;
+      font-size: 1.8rem;
+      font-weight: 600;
+      line-height: 1.44;
+      letter-spacing: normal;
+      color: #1164a3;
+
+      & svg {
+        font-size: 1.5rem;
+        margin-left: 1.9rem;
+      }
+    }
+  }
+
+  &-img {
+    width: auto;
+    max-width: 40%;
+
+    
+    @include respond(desktop-sm) {
+      margin-top: 5.5rem;
+      max-width: 100%;
+    }
+  }
+}
+
+
+
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Source Sans Pro', sans-serif;

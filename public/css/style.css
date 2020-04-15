@@ -7,12 +7,25 @@
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 991px) {
+    html {
+      font-size: 55%; } }
+  @media (max-width: 767px) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 575px) {
+    html {
+      font-size: 45%; } }
+  @media (max-width: 379px) {
+    html {
+      font-size: 40%; } }
 
 body {
   box-sizing: border-box;
   font-size: 1rem;
   font-family: Arial, Helvetica, sans-serif;
-  color: #1c1c1c; }
+  color: #1c1c1c;
+  overflow-x: hidden; }
 
 .btn {
   text-decoration: none;
@@ -61,6 +74,8 @@ body {
   @media (max-width: 991px) {
     .header {
       border: 0; } }
+  .header .nav {
+    z-index: 1000; }
   .header .nav, .header .toolbar {
     padding: 1.2rem 2.5rem;
     margin: 0 auto;
@@ -73,9 +88,6 @@ body {
     display: flex;
     font-family: 'Open Sans', sans-serif;
     align-items: center; }
-    @media (max-width: 1720px) {
-      .header .nav, .header .toolbar {
-        max-width: 108rem; } }
     @media (max-width: 991px) {
       .header .nav, .header .toolbar {
         padding: 0;
@@ -224,6 +236,8 @@ body {
         @media (max-width: 575px) {
           .header .nav-right .on-small, .header .toolbar-right .on-small {
             width: 100%; } }
+  .header .nav {
+    z-index: 100%; }
   .header .toolbar {
     position: relative;
     height: 0;
@@ -236,3 +250,180 @@ body {
     .header .toolbar-top {
       display: flex;
       width: 100%; }
+
+.main {
+  padding: 0 2.5rem;
+  padding-left: 3rem;
+  margin: 0 auto;
+  max-width: 130rem; }
+  @media (max-width: 991px) {
+    .main {
+      padding: 0 2.5rem; } }
+
+.section-hero {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  @media (max-width: 991px) {
+    .section-hero {
+      margin-top: 4.6rem;
+      flex-direction: column;
+      padding: 0 10%; } }
+  @media (max-width: 575px) {
+    .section-hero {
+      text-align: center;
+      flex-direction: column;
+      padding: 0 5%; } }
+  @media (max-width: 379px) {
+    .section-hero {
+      padding: 0; } }
+  .section-hero-main {
+    width: 48%; }
+    @media (max-width: 991px) {
+      .section-hero-main {
+        width: 100%;
+        margin-bottom: 3.6rem; } }
+    .section-hero-main-title-small {
+      margin-bottom: 1rem;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 1.15;
+      color: #4a4b4d; }
+    .section-hero-main-title {
+      margin-bottom: 3.6rem;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 4.2rem;
+      font-weight: 700;
+      line-height: 1.24;
+      letter-spacing: -1.05px; }
+    .section-hero-main-text {
+      font-size: 1.9rem;
+      line-height: 1.42;
+      letter-spacing: 0.19px;
+      color: #191919; }
+    .section-hero-main-buttons {
+      margin-top: 4.6rem;
+      margin-bottom: 1.3rem;
+      display: flex;
+      align-items: center; }
+      @media (max-width: 575px) {
+        .section-hero-main-buttons {
+          flex-wrap: wrap; } }
+      .section-hero-main-buttons .btn {
+        padding: 1.9rem 5.3rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+        letter-spacing: 0.15px; }
+        .section-hero-main-buttons .btn:not(:last-of-type) {
+          margin-right: 2.2rem; }
+          @media (max-width: 575px) {
+            .section-hero-main-buttons .btn:not(:last-of-type) {
+              margin-right: 0;
+              margin-bottom: 1.3rem; } }
+        @media (max-width: 991px) {
+          .section-hero-main-buttons .btn {
+            width: 49.5%; } }
+        @media (max-width: 575px) {
+          .section-hero-main-buttons .btn {
+            margin-right: 0;
+            width: 100%; } }
+    .section-hero-main-small-text {
+      margin-left: 1.2rem;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1.25rem;
+      line-height: 1.28;
+      letter-spacing: 0.13px;
+      color: #5f5f5f; }
+  .section-hero-img {
+    width: auto;
+    max-width: 50%; }
+    @media (max-width: 991px) {
+      .section-hero-img {
+        width: auto;
+        max-width: 100%; } }
+
+.section-video {
+  margin-top: 10rem;
+  text-align: center; }
+  .section-video-title {
+    margin-bottom: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.48;
+    letter-spacing: -0.4px; }
+  .section-video-text {
+    margin-bottom: 3.8rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.44;
+    letter-spacing: 0.18px; }
+  .section-video video {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 80rem; }
+
+.section-about.one .section-about-main {
+  max-width: 35rem; }
+.section-about.two {
+  flex-direction: row-reverse; }
+  .section-about.two .section-about-main {
+    max-width: 56.5rem; }
+.section-about.three .section-about-main {
+  max-width: 55.5rem; }
+.section-about.four {
+  flex-direction: row-reverse; }
+  .section-about.four .section-about-main {
+    max-width: 52.8rem; }
+
+.section-about {
+  margin-top: 9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly; }
+  @media (max-width: 767px) {
+    .section-about {
+      flex-direction: column !important;
+      padding: 0 10%; } }
+  @media (max-width: 575px) {
+    .section-about {
+      padding: 0 5%; } }
+  @media (max-width: 575px) {
+    .section-about {
+      padding: 0; } }
+  @media (max-width: 767px) {
+    .section-about-main {
+      max-width: 100%; } }
+  .section-about-main-title {
+    margin-bottom: 2.1rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 4.9rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.34px; }
+  .section-about-main-text {
+    margin-bottom: 1.7rem;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.37;
+    letter-spacing: 0.19px; }
+  .section-about-main-link {
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.44;
+    letter-spacing: normal;
+    color: #1164a3; }
+    .section-about-main-link svg {
+      font-size: 1.5rem;
+      margin-left: 1.9rem; }
+  .section-about-img {
+    width: auto;
+    max-width: 40%; }
+    @media (max-width: 767px) {
+      .section-about-img {
+        margin-top: 5.5rem;
+        max-width: 100%; } }
