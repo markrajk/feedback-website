@@ -1,0 +1,378 @@
+// ==================================
+// VARIABLES
+// ==================================
+$green-light: #76dd53;
+$green-primary: #48bc20;
+$green-dark: #268008;
+$text-color-primary: #1c1c1c;
+
+// ==================================
+// MIXINS & FUNCTIONS
+// ==================================
+@mixin flexbox {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flexbox;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == desktop-xxsm {
+    @media (max-width: 379px) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop-xsm {
+    @media (max-width: 575px) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop-sm {
+    @media (max-width: 767px) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop-md {
+    @media (max-width: 991px) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop-lg {
+    @media (max-width: 1199px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == desktop-xl {
+    @media (max-width: 1439px) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop-xxl {
+    @media (max-width: 1720px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == desktop-xxxl {
+    @media (max-width: 1900px) {
+      @content;
+    }
+  }
+}
+
+@function resize($base, $value) {
+  $result: $base * $value;
+  @return $result;
+}
+
+// ==================================
+// GENERAL SETTINGS
+// ==================================
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;   //1rem = 10px 10px/16 62.5%
+}
+
+body {
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: $text-color-primary;
+    // font-family: 'Open Sans', sans-serif;
+    // font-family: 'Source Sans Pro', sans-serif;
+}
+
+// ==================================
+// UTLITIES
+// ==================================
+.btn {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: background-color .3s;
+  white-space: nowrap;
+  border: solid 1.5px transparent;
+
+  &-primary {
+    color: #FFF;
+    background-color: $green-primary;
+
+    &:hover,
+    &:focus {
+      background-color: $green-light;
+    }
+
+    &.outline {
+      color: $green-primary;
+      background-color: #FFF;
+      border-color: $green-primary;
+
+      &:hover,
+      &:focus {
+        color: #fff;
+        border-color: $green-light;
+        background-color: $green-light;
+      }
+    }
+  }
+}
+
+.show-md {
+  display: none;
+
+  @include respond(desktop-md) {
+    display: inline-flex;
+  }
+}
+
+.show-xsm {
+  display: none;
+
+  @include respond(desktop-xsm) {
+    display: inline-flex;
+  }
+}
+
+.hide-xsm {
+  @include respond(desktop-xsm) {
+    display: none;
+  }
+}
+
+.onscreen {
+  transform: translate(0,0)!important;
+}
+
+// ==================================
+// LAYOUT
+// ==================================
+
+.header {
+  border-bottom: 1px solid #EBEAEB;
+
+  & .nav,
+  & .toolbar {
+    padding: 1.2rem 2rem;
+    margin: 0 auto;
+    height: 6.9rem;
+    max-width: 130rem;
+    @include flexbox;
+    font-family: 'Open Sans', sans-serif;
+    align-items: center;
+
+    @include respond(desktop-xxl) {
+      max-width: 108rem;
+    }
+    
+
+    @include respond(desktop-md) {
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #FFF;
+      transform: translate(100%, 0);
+
+    }
+
+    &-top {
+      display: inline-flex;
+      align-items: center;
+      border-bottom: 0;
+
+      @include respond(desktop-md) {
+        padding: 1.5rem 2rem;
+        padding-right: 4rem;
+        display: flex;
+
+        border-bottom: 1px solid #EBEAEB;
+      }
+
+      & .nav-logo {
+        margin-right: 1rem;
+        height: 4rem;
+  
+        @include respond(desktop-md) {
+          margin-right: auto;
+        }
+      }
+
+      & .link {
+        text-decoration: none;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 600;
+        line-height: 1.4;
+        color: #1c1c1c;
+
+        &:hover,
+        &:focus {
+          text-decoration: underline;
+        }
+      }
+
+      & .btn-primary {
+        margin-left: 2rem;
+        padding: 1.1rem 1.8rem;
+        font-weight: 800;
+        letter-spacing: 0.77px;
+      }
+
+      & .burger {
+        & svg {
+          cursor: pointer;
+          color: #232324;
+          font-size: 2rem;
+        }
+      }
+    }
+
+    &-list {
+      margin-right: 3rem;
+      width: 100%;
+      max-width: 44rem;
+      list-style: none;
+      @include flexbox;
+      align-items: center;
+      justify-content: space-evenly;
+
+      @include respond(desktop-md) {
+        display: block;
+        max-width: 100%;
+
+      }
+
+      &-item {
+
+        &-link {
+          text-decoration: none;
+          font-size: 1.4rem;
+          font-weight: 600;
+          color: $text-color-primary;
+          line-height: 1.36;
+          white-space: nowrap;
+
+          @include respond(desktop-md) {
+            padding: 2rem 0;
+            padding-left: 10%;
+            padding-right: 12%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+  
+            &:hover,
+            &:focus {
+              text-decoration: none!important;
+              background-color: #f5f5f5;
+            }
+          }
+
+          &.active {
+            font-weight: 700;
+          }
+
+          &:hover,
+          &:focus {
+            text-decoration: underline;
+          }
+        }
+
+        & svg {
+          color: #232324;
+          display: none;
+          font-size: 2rem;
+
+          @include respond(desktop-md) {
+            display: inline-block;
+          }
+        }
+      }
+    }
+
+    &-right {
+      @include flexbox;
+      align-items: center;
+      margin-left: auto;
+
+      @include respond(desktop-md) {
+        justify-content: space-between;
+        padding: 0 10%;
+      }
+
+      @include respond(desktop-xsm) {
+        flex-direction: column;
+      }
+
+      &-sign-in {
+        margin-right: 2rem;
+        text-decoration: none;
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: $text-color-primary;
+        line-height: 1.38;
+        white-space: nowrap;
+
+        &:hover,
+        &:focus {
+          text-decoration: underline;
+        }
+      }
+
+      & .btn-primary {
+        padding: 1.1rem 1.8rem;
+        font-weight: 800;
+        letter-spacing: 0.77px;
+      }
+      & .on-big {
+        @include respond(desktop-md) {
+          display: none;
+        }
+      }
+
+      & .on-small {
+        margin: .85rem 0;
+        display: none;
+        @include respond(desktop-md) {
+          width: 48%;
+          display: inline-flex;
+        }
+
+        @include respond(desktop-xsm) {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  & .toolbar {
+    position: relative;
+    height: 0;
+    display: none;
+    transform: translate(0,0);
+
+    @include respond(desktop-md) {
+      height: 6.9rem;
+      display: flex;
+    }
+
+    &-top {
+      display: flex;
+      width: 100%;
+    }
+  }
+}
