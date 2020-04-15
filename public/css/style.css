@@ -58,6 +58,9 @@ body {
 
 .header {
   border-bottom: 1px solid #EBEAEB; }
+  @media (max-width: 991px) {
+    .header {
+      border: 0; } }
   .header .nav, .header .toolbar {
     padding: 1.2rem 2rem;
     margin: 0 auto;
@@ -94,6 +97,10 @@ body {
           padding-right: 4rem;
           display: flex;
           border-bottom: 1px solid #EBEAEB; } }
+      @media (max-width: 575px) {
+        .header .nav-top, .header .toolbar-top {
+          padding: 1.5rem;
+          padding-right: 2rem; } }
       .header .nav-top .nav-logo, .header .toolbar-top .nav-logo {
         margin-right: 1rem;
         height: 4rem; }
@@ -110,9 +117,10 @@ body {
         .header .nav-top .link:hover, .header .nav-top .link:focus, .header .toolbar-top .link:hover, .header .toolbar-top .link:focus {
           text-decoration: underline; }
       .header .nav-top .btn-primary, .header .toolbar-top .btn-primary {
+        font-size: 1.35rem;
         margin-left: 2rem;
-        padding: 1.1rem 1.8rem;
-        font-weight: 800;
+        padding: 1.1rem 3.9rem;
+        font-weight: 700;
         letter-spacing: 0.77px; }
       .header .nav-top .burger svg, .header .toolbar-top .burger svg {
         cursor: pointer;
@@ -143,6 +151,7 @@ body {
         white-space: nowrap; }
         @media (max-width: 991px) {
           .header .nav-list-item-link, .header .toolbar-list-item-link {
+            font-size: 1.7rem;
             padding: 2rem 0;
             padding-left: 10%;
             padding-right: 12%;
@@ -152,6 +161,10 @@ body {
             .header .nav-list-item-link:hover, .header .nav-list-item-link:focus, .header .toolbar-list-item-link:hover, .header .toolbar-list-item-link:focus {
               text-decoration: none !important;
               background-color: #f5f5f5; } }
+        @media (max-width: 575px) {
+          .header .nav-list-item-link, .header .toolbar-list-item-link {
+            padding-left: 8%;
+            padding-right: 8%; } }
         .header .nav-list-item-link.active, .header .toolbar-list-item-link.active {
           font-weight: 700; }
         .header .nav-list-item-link:hover, .header .nav-list-item-link:focus, .header .toolbar-list-item-link:hover, .header .toolbar-list-item-link:focus {
@@ -159,7 +172,7 @@ body {
       .header .nav-list-item svg, .header .toolbar-list-item svg {
         color: #232324;
         display: none;
-        font-size: 2rem; }
+        font-size: 1.5rem; }
         @media (max-width: 991px) {
           .header .nav-list-item svg, .header .toolbar-list-item svg {
             display: inline-block; } }
@@ -173,12 +186,15 @@ body {
       margin-left: auto; }
       @media (max-width: 991px) {
         .header .nav-right, .header .toolbar-right {
+          margin-top: 3rem;
           justify-content: space-between;
           padding: 0 10%; } }
       @media (max-width: 575px) {
         .header .nav-right, .header .toolbar-right {
-          flex-direction: column; } }
+          flex-direction: column;
+          padding: 0 8%; } }
       .header .nav-right-sign-in, .header .toolbar-right-sign-in {
+        font-family: 'Source Sans Pro', sans-serif;
         margin-right: 2rem;
         text-decoration: none;
         font-size: 1.6rem;
@@ -189,13 +205,16 @@ body {
         .header .nav-right-sign-in:hover, .header .nav-right-sign-in:focus, .header .toolbar-right-sign-in:hover, .header .toolbar-right-sign-in:focus {
           text-decoration: underline; }
       .header .nav-right .btn-primary, .header .toolbar-right .btn-primary {
+        font-size: 1.4rem;
         padding: 1.1rem 1.8rem;
-        font-weight: 800;
+        font-weight: 700;
         letter-spacing: 0.77px; }
       @media (max-width: 991px) {
         .header .nav-right .on-big, .header .toolbar-right .on-big {
           display: none; } }
       .header .nav-right .on-small, .header .toolbar-right .on-small {
+        font-size: 1.7rem;
+        padding: 1.7rem 0;
         margin: .85rem 0;
         display: none; }
         @media (max-width: 991px) {

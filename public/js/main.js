@@ -1,5 +1,6 @@
 const menuToggle = document.querySelectorAll('.menu-toggle');
 const nav = document.querySelector('.nav');
+const burger = nav.querySelector('.burger');
 
 function addEvent(element, evName, fn) {
   if (element.addEventListener) {
@@ -26,7 +27,7 @@ function addEvent(element, evName, fn) {
 //   });
 // });
 
-[...menuToggle].forEach((e) => {
+menuToggle.forEach((e) => {
   addEvent(e, 'click', function () {
     nav.style.transition = 'transform .5s ease-in-out';
     setTimeout(() => {
@@ -35,8 +36,10 @@ function addEvent(element, evName, fn) {
     if (nav.classList.contains('onscreen')) {
       window.scrollTo(0, 0);
       nav.classList.remove('onscreen');
+      burger.innerHTML = '<i class="fas fa-bars show-xsm"></i>';
     } else {
       nav.classList.add('onscreen');
+      burger.innerHTML = '<i class="fas fa-times show-xsm"></i>';
     }
   });
 });

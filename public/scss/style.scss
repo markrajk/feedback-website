@@ -162,6 +162,10 @@ body {
 .header {
   border-bottom: 1px solid #EBEAEB;
 
+  @include respond(desktop-md) {
+    border: 0;
+  }
+
   & .nav,
   & .toolbar {
     padding: 1.2rem 2rem;
@@ -203,6 +207,11 @@ body {
         border-bottom: 1px solid #EBEAEB;
       }
 
+      @include respond(desktop-xsm) {
+        padding: 1.5rem;
+        padding-right: 2rem;
+      }
+
       & .nav-logo {
         margin-right: 1rem;
         height: 4rem;
@@ -227,9 +236,10 @@ body {
       }
 
       & .btn-primary {
+        font-size: 1.35rem;
         margin-left: 2rem;
-        padding: 1.1rem 1.8rem;
-        font-weight: 800;
+        padding: 1.1rem 3.9rem;
+        font-weight: 700;
         letter-spacing: 0.77px;
       }
 
@@ -268,6 +278,7 @@ body {
           white-space: nowrap;
 
           @include respond(desktop-md) {
+            font-size: 1.7rem;
             padding: 2rem 0;
             padding-left: 10%;
             padding-right: 12%;
@@ -280,6 +291,11 @@ body {
               text-decoration: none!important;
               background-color: #f5f5f5;
             }
+          }
+
+          @include respond(desktop-xsm) {
+            padding-left: 8%;
+            padding-right: 8%;
           }
 
           &.active {
@@ -295,7 +311,7 @@ body {
         & svg {
           color: #232324;
           display: none;
-          font-size: 2rem;
+          font-size: 1.5rem;
 
           @include respond(desktop-md) {
             display: inline-block;
@@ -310,15 +326,18 @@ body {
       margin-left: auto;
 
       @include respond(desktop-md) {
+        margin-top: 3rem;
         justify-content: space-between;
         padding: 0 10%;
       }
 
       @include respond(desktop-xsm) {
         flex-direction: column;
+        padding: 0 8%;
       }
 
       &-sign-in {
+        font-family: 'Source Sans Pro', sans-serif;
         margin-right: 2rem;
         text-decoration: none;
         font-size: 1.6rem;
@@ -334,8 +353,9 @@ body {
       }
 
       & .btn-primary {
+        font-size: 1.4rem;
         padding: 1.1rem 1.8rem;
-        font-weight: 800;
+        font-weight: 700;
         letter-spacing: 0.77px;
       }
       & .on-big {
@@ -345,6 +365,8 @@ body {
       }
 
       & .on-small {
+        font-size: 1.7rem;
+        padding: 1.7rem 0;
         margin: .85rem 0;
         display: none;
         @include respond(desktop-md) {
