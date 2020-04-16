@@ -1105,7 +1105,7 @@ body {
     background-color: #ffffff;
 
     @include respond(desktop-md) {
-      padding-bottom: 0;
+      padding: 0;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);
     }
@@ -1123,11 +1123,8 @@ body {
       border-right: 1px solid #EBEAEB;
 
       @include respond(desktop-md) {
-        border-bottom: 1px solid #EBEAEB;
-      }
-
-      @include respond(desktop-xsm) {
         padding-top: 2rem;
+        border-bottom: 1px solid #EBEAEB;
       }
       
 

@@ -707,7 +707,7 @@ body {
     background-color: #ffffff; }
     @media (max-width: 991px) {
       .section-pricing-main {
-        padding-bottom: 0;
+        padding: 0;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr); } }
     @media (max-width: 575px) {
@@ -722,10 +722,8 @@ body {
       border-right: 1px solid #EBEAEB; }
       @media (max-width: 991px) {
         .section-pricing-main-card {
+          padding-top: 2rem;
           border-bottom: 1px solid #EBEAEB; } }
-      @media (max-width: 575px) {
-        .section-pricing-main-card {
-          padding-top: 2rem; } }
       .section-pricing-main-card-title {
         font-family: 'Open Sans', sans-serif;
         margin-bottom: .6rem;
