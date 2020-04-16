@@ -118,6 +118,7 @@ body {
   padding-right: 5rem;
   display: inherit;
   margin: 0 auto;
+  width: 100%;
   max-width: 120rem;
 
   @include respond(desktop-md) {
@@ -125,7 +126,7 @@ body {
     padding-right: 10%;
   }
 
-  @include respond(desktop-sm) {
+  @include respond(desktop-xsm) {
     padding-left: 5%;
     padding-right: 5%;
   }
@@ -254,10 +255,10 @@ body {
 
   & .nav,
   & .toolbar {
-    padding: 1.2rem 2.5rem;
+    padding: 1.2rem 5rem;
     margin: 0 auto;
     height: 6.9rem;
-    max-width: 130rem;
+    max-width: 120rem;
     @include flexbox;
     font-family: 'Open Sans', sans-serif;
     align-items: center;
@@ -282,16 +283,14 @@ body {
       border-bottom: 1px solid transparent;
 
       @include respond(desktop-md) {
-        padding: 1.2rem 2.5rem;
-        padding-right: 4rem;
+        padding: 1.2rem 10%;
         display: flex;
 
         border-bottom: 1px solid #EBEAEB;
       }
 
       @include respond(desktop-xsm) {
-        padding: 1.2rem 2.5rem;
-        padding-right: 8%;
+        padding: 1.2rem 5%;
       }
 
       & .nav-logo {
@@ -486,14 +485,14 @@ body {
 }
 
 .main {
-  padding: 0 2.5rem;
-  padding-left: 3rem;
-  margin: 0 auto;
-  max-width: 130rem;
+  // padding: 0 2.5rem;
+  // padding-left: 3rem;
+  // margin: 0 auto;
+  // max-width: 130rem;
 
-  @include respond(desktop-md) {
-    padding: 0 2.5rem;
-  }
+  // @include respond(desktop-md) {
+  //   padding: 0 2.5rem;
+  // }
 }
 
 .section-hero {
@@ -505,14 +504,12 @@ body {
   @include respond(desktop-md) {
     margin-top: 4.6rem;
     flex-direction: column;
-    padding: 0 10%;
   }
 
 
   @include respond(desktop-xsm) {
     text-align: center;
     flex-direction: column;
-    padding: 0 5%;
   }
 
   @include respond(desktop-xxsm) {
@@ -641,6 +638,7 @@ body {
 .section-about {
   &.one {
     & .section-about-main {
+      margin-right: 7%;
       max-width: 35rem;
     }
   }
@@ -649,6 +647,7 @@ body {
     flex-direction: row-reverse;
 
     & .section-about-main {
+      margin-left: 7%;
       max-width: 56.5rem;
     }
   }
@@ -656,6 +655,7 @@ body {
   &.three {
 
     & .section-about-main {
+      margin-right: 7%;
       max-width: 55.5rem;
     }
   }
@@ -664,6 +664,7 @@ body {
     flex-direction: row-reverse;
 
     & .section-about-main {
+      margin-left: 7%;
       max-width: 52.8rem;
     }
   }
@@ -673,33 +674,23 @@ body {
   margin-top: 9rem;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 
   @include respond(desktop-sm) {
     flex-direction: column!important;
-    padding: 0 10%;
   }
-
-  @include respond(desktop-xsm) {
-    padding: 0 5%;
-  }
-
-  @include respond(desktop-xsm) {
-    padding: 0;
-  }
-
-  
 
   &-main {
-
     @include respond(desktop-sm) {
-      max-width: 100%;
+      //text-align: center;
+      margin: 0!important;
+      max-width: 100%!important;
     }
 
     &-title {
       margin-bottom: 2.1rem;
       font-family: 'Open Sans', sans-serif;
-      font-size: 4.9rem;
+      font-size: 4.4rem;
       font-weight: 700;
       line-height: 1.2;
       letter-spacing: -0.34px;
