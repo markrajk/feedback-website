@@ -1,172 +1,411 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Document</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11" />
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Source+Sans+Pro:400,600,700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/e9f50f9a1c.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="./public/css/style.css">
-</head>
-<body>
+  <head>
+    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Source+Sans+Pro:400,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/e9f50f9a1c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./public/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="toolbar">
+        <div class="toolbar-top">
+          <img
+            class="nav-logo"
+            src="./public/img/team-feedback-logo.svg"
+            alt="Team feedback logo"
+          />
+          <a href="#" class="link menu-toggle show-md hide-xsm">Menu</a>
+          <a href="#" class="btn btn-primary show-md hide-xsm">SIGN IN</a>
+          <div class="menu-toggle burger">
+            <i class="fas fa-bars show-xsm"></i>
+          </div>
+        </div>
+      </div>
+      <nav class="nav">
+        <div class="nav-top">
+          <img
+            class="nav-logo"
+            src="./public/img/team-feedback-logo.svg"
+            alt="Team feedback logo"
+          />
+          <a href="#" class="link menu-toggle show-md hide-xsm">Menu</a>
+          <a href="#" class="btn btn-primary show-md hide-xsm">SIGN IN</a>
+          <div class="menu-toggle burger">
+            <i class="fas fa-bars show-xsm"></i>
+          </div>
+        </div>
+        <ul class="nav-list">
+          <li class="nav-list-item">
+            <a href="#" class="nav-list-item-link"
+              >Overview
+              <i class="fas fa-chevron-right"></i>
+            </a>
+          </li>
+
+          <li class="nav-list-item">
+            <a href="#" class="nav-list-item-link active"
+              >Features
+              <i class="fas fa-chevron-right"></i>
+            </a>
+          </li>
+
+          <li class="nav-list-item">
+            <a href="#" class="nav-list-item-link"
+              >Pricing
+              <i class="fas fa-chevron-right"></i>
+            </a>
+          </li>
+
+          <li class="nav-list-item">
+            <a href="#" class="nav-list-item-link"
+              >Support
+              <i class="fas fa-chevron-right"></i>
+            </a>
+          </li>
+
+          <li class="nav-list-item">
+            <a href="#" class="nav-list-item-link"
+              >Contact us
+              <i class="fas fa-chevron-right"></i>
+            </a>
+          </li>
+        </ul>
+
+        <div class="nav-right">
+          <a href="#" class="nav-right-sign-in on-big">Sign in</a>
+          <a href="#" class="btn btn-primary on-big">GET STARTED</a>
+
+          <a href="#" class="btn btn-primary outline on-small">SIGN IN</a>
+          <a href="#" class="btn btn-primary on-small">DOWNLOAD APP</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!-- SECTION HERO -->
+      <section class="section section-hero">
+        <div class="section-hero-main">
+          <p class="section-hero-main-title-small hide-xsm">Team feedback</p>
+          <h1 class="section-hero-main-title">
+            A great new tool to boost Your companies development
+          </h1>
+          <p class="section-hero-main-text">
+            Team feedback is a new kind of corporate feedback tool. A very
+            efficient tool to develop teams, companies and employees. Also
+            called the one click feedback app.
+          </p>
+          <div class="section-hero-main-buttons">
+            <a href="#" class="btn btn-primary outline">GET STARTED</a>
+            <a href="#" class="btn btn-primary">LEARN MORE</a>
+          </div>
+          <div class="section-hero-main-small-text hide-xsm">
+            Basic features free of charge
+          </div>
+        </div>
+        <img
+          class="section section-hero-img"
+          src="./public/img/hero-img-x2.png"
+          alt="Team feedback application screenshot"
+        />
+      </section>
+
+      <!-- SECTION VIDEO -->
+      <section class="section section-video">
+        <h2 class="section-video-title">The great new feedback routine</h2>
+        <p class="section-video-text">
+          Very simple, very easy and very efficient. Watch the video to get to
+          know team feedback in 2min.
+        </p>
+        <video controls="true">
+          <source
+            src="./public/video/Dashboard _ Teams _ Main View - Google Chrome 2020-04-15 20-54-12.mp4"
+          />
+        </video>
+      </section>
+
+      <!-- SECTION ABOUT -->
+      <section class="section section-about one">
+        <div class="section-about-main">
+          <h2 class="section-about-main-title">Just one click and comment</h2>
+          <p class="section-about-main-text">
+            Let your people give each other feedback with just one click and
+            comment. Very easy, simple and quick.
+          </p>
+          <a href="#" class="section-about-main-link"
+            >Click here for an example <i class="fas fa-arrow-right"></i
+          ></a>
+        </div>
+
+        <img
+          src="./public/img/give-feedback-x2.png"
+          alt="Give feedback page screenshot"
+          class="section-about-img"
+        />
+      </section>
+
+      <section class="section section-about two">
+        <div class="section-about-main">
+          <h2 class="section-about-main-title">
+            Everyone can easily follow his development
+          </h2>
+          <p class="section-about-main-text">
+            Everyone will get much more feedback than at the moment. How was my
+            week, what went well and how to improve? How does my longterm
+            development look like?
+          </p>
+          <a href="#" class="section-about-main-link"
+            >Click here for an example <i class="fas fa-arrow-right"></i
+          ></a>
+        </div>
+        <img
+          src="./public/img/my-feedback-x2.png"
+          alt="Give feedback page screenshot"
+          class="section-about-img"
+        />
+      </section>
+
+      <section class="section section-about three">
+        <div class="section-about-main">
+          <h2 class="section-about-main-title">
+            A very efficient tool for team leaders
+          </h2>
+          <p class="section-about-main-text">
+            Team leaders can easily follow, analyse and compare how their teams
+            are doing. For example in which teams people feel happy, productive
+            and team working goes well and in which teams maybe not. And if not
+            what could be the reason for it.
+          </p>
+          <a href="#" class="section-about-main-link"
+            >Click here for an example <i class="fas fa-arrow-right"></i
+          ></a>
+        </div>
+
+        <img
+          src="./public/img/team-feedback-x2.png"
+          alt="Give feedback page screenshot"
+          class="section-about-img"
+        />
+      </section>
+
+      <section class="section section-about four">
+        <div class="section-about-main">
+          <h2 class="section-about-main-title">
+            A dashboard to get all out of your data
+          </h2>
+          <p class="section-about-main-text">
+            All basic features can be done with the mobile app. For advanced
+            monitoring, analytics and controlling there is the dashboard tool
+            for team leaders.
+          </p>
+          <a href="#" class="section-about-main-link"
+            >Click here for an example <i class="fas fa-arrow-right"></i
+          ></a>
+        </div>
+
+        <img
+          src="./public/img/dashboard-x2.png"
+          alt="Give feedback page screenshot"
+          class="section-about-img"
+        />
+      </section>
+    </main>
+
+    <!-- SECTION BANNER -->
+    <section class="section section-banner">
+      <h2 class="section-banner-title">
+        Let’s start developing your teams
+      </h2>
+      <div class="section-banner-buttons">
+        <a href="#" class="btn btn-white">GET STARTED</a>
+        <a href="#" class="btn btn-white outline">LEARN MORE</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-main">
+          <div class="footer-main-left">
+            <img src="./public/img/team-feedback-logo-only.svg" alt="Team feedback logo" class="footer-main-left-logo">
+          </div>
+          <div class="footer-main-right">
   
-  <header class="header">
-    <div class="toolbar">
-      <div class="toolbar-top">
-        <img class="nav-logo" src="./public/img/team-feedback-logo.svg" alt="Team feedback logo">
-        <a href="#" class="link menu-toggle show-md hide-xsm">Menu</a>
-        <a href="#" class="btn btn-primary show-md hide-xsm">SIGN IN</a>
-        <div class="menu-toggle burger">
-          <i class="fas fa-bars show-xsm"></i>
+            <ul class="footer-main-right-list">
+              <li class="footer-main-right-list-item">
+                <p href="#" class="footer-main-right-list-item-title">OVERVIEW</p>
+              </li>
+              <li class="footer-main-right-list-item">
+                <a href="#" class="footer-main-right-list-item-link">Section I</a>
+              </li>
+  
+              <li class="footer-main-right-list-item">
+                <a href="#" class="footer-main-right-list-item-link">Section II</a>
+              </li>
+  
+              <li class="footer-main-right-list-item">
+                <a href="#" class="footer-main-right-list-item-link">Section III</a>
+              </li>
+  
+              <li class="footer-main-right-list-item">
+                <a href="#" class="footer-main-right-list-item-link">Section IV</a>
+              </li>
+  
+              <li class="footer-main-right-list-item">
+                <a href="#" class="footer-main-right-list-item-link">Section V</a>
+              </li>
+  
+              <li class="footer-main-right-list-item">
+                <a href="#" class="footer-main-right-list-item-link">Section VI</a>
+              </li>
+            </ul>
+  
+            <ul class="footer-main-right-list">
+              <li class="footer-main-right-list-item">
+                <p href="#" class="footer-main-right-list-item-title">FEATURES</p>
+              </li>
+              <li class="footer-main-right-list-item">
+                <a href="#" class="footer-main-right-list-item-link">Giving feedback</a>
+              </li>
+  
+              <li class="footer-main-right-list-item">
+                <a href="#" class="footer-main-right-list-item-link">Receiving feedback</a>
+              </li>
+  
+              <li class="footer-main-right-list-item">
+                <a href="#" class="footer-main-right-list-item-link">Following employees</a>
+              </li>
+  
+              <li class="footer-main-right-list-item">
+                <a href="#" class="footer-main-right-list-item-link">Following teams</a>
+              </li>
+  
+              <li class="footer-main-right-list-item">
+                <a href="#" class="footer-main-right-list-item-link">The leader dashboard</a>
+              </li>
+  
+              <li class="footer-main-right-list-item">
+                <a href="#" class="footer-main-right-list-item-link">Customer Support</a>
+              </li>
+            </ul>
+  
+            <ul class="footer-main-right-list hide-xsm">
+              <li class="footer-main-right-list-item">
+                <p href="#" class="footer-main-right-list-item-title">MORE MATERIAL</p>
+              </li>
+              <li class="footer-main-right-list-item">
+                <a href="#" class="footer-main-right-list-item-link">PDF product brochure</a>
+              </li>
+  
+              <li class="footer-main-right-list-item">
+                <a href="#" class="footer-main-right-list-item-link">Section II</a>
+              </li>
+  
+              <li class="footer-main-right-list-item">
+                <a href="#" class="footer-main-right-list-item-link">Section III</a>
+              </li>
+  
+              <li class="footer-main-right-list-item">
+                <a href="#" class="footer-main-right-list-item-link">Section IV</a>
+              </li>
+  
+              <li class="footer-main-right-list-item">
+                <a href="#" class="footer-main-right-list-item-link">Section V</a>
+              </li>
+  
+              <li class="footer-main-right-list-item">
+                <a href="#" class="footer-main-right-list-item-link">Section VI</a>
+              </li>
+            </ul>
+  
+            <ul class="footer-main-right-list hide-xxsm">
+              <li class="footer-main-right-list-item">
+                <p href="#" class="footer-main-right-list-item-title">COMPANY</p>
+              </li>
+              <li class="footer-main-right-list-item">
+                <a href="#" class="footer-main-right-list-item-link">About Us</a>
+              </li>
+  
+              <li class="footer-main-right-list-item">
+                <a href="#" class="footer-main-right-list-item-link">Section II</a>
+              </li>
+  
+              <li class="footer-main-right-list-item">
+                <a href="#" class="footer-main-right-list-item-link">Section III</a>
+              </li>
+  
+              <li class="footer-main-right-list-item">
+                <a href="#" class="footer-main-right-list-item-link">Section IV</a>
+              </li>
+  
+              <li class="footer-main-right-list-item">
+                <a href="#" class="footer-main-right-list-item-link">Section V</a>
+              </li>
+  
+              <li class="footer-main-right-list-item">
+                <a href="#" class="footer-main-right-list-item-link">Section VI</a>
+              </li>
+            </ul>
+  
+          </div>
         </div>
       </div>
-    </div>
-    <nav class="nav">
-      <div class="nav-top">
-        <img class="nav-logo" src="./public/img/team-feedback-logo.svg" alt="Team feedback logo">
-        <a href="#" class="link menu-toggle show-md hide-xsm">Menu</a>
-        <a href="#" class="btn btn-primary show-md hide-xsm">SIGN IN</a>
-        <div class="menu-toggle burger">
-          <i class="fas fa-bars show-xsm"></i>
+
+      <div class="footer-bottom-wrapper">
+
+        <div class="container">
+          <div class="footer-bottom">
+            <ul class="footer-bottom-list hide-sm">
+              <li class="footer-bottom-list-item">
+                <a href="#" class="footer-bottom-list-item-link">Status</a>
+              </li>
+              <li class="footer-bottom-list-item">
+                <a href="#" class="footer-bottom-list-item-link">Privacy & Terms</a>
+              </li>
+              <li class="footer-bottom-list-item">
+                <a href="#" class="footer-bottom-list-item-link">Contact Us</a>
+              </li>
+              <li class="footer-bottom-list-item">
+                <a href="#" class="footer-bottom-list-item-link"><i class="fas fa-globe"></i> Change Region <i class="fas fa-chevron-down"></i></a>
+              </li>
+            </ul>
+    
+            <ul class="footer-bottom-list">
+              <li class="footer-bottom-list-item">
+                <a href="#" class="footer-bottom-list-item-social"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li class="footer-bottom-list-item">
+                <a href="#" class="footer-bottom-list-item-social"><i class="fab fa-facebook-square"></i></a>
+              </li>
+              <li class="footer-bottom-list-item">
+                <a href="#" class="footer-bottom-list-item-social"><i class="fab fa-youtube"></i></a>
+              </li>
+              <li class="footer-bottom-list-item">
+                <a href="#" class="footer-bottom-list-item-social"><i class="fab fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+      <div class="footer-copyrights">
+        <div class="container">
+          <p class="footer-copyrights-text">
+            © Copyright 2020 Team feedback, Inc. All rights reserved. <span class="hide-xsm">Various trademarks held by their respective owners.</span>
+          </p>
         </div>
       </div>
-      <ul class="nav-list">
-        <li class="nav-list-item">
-          <a href="#" class="nav-list-item-link">Overview
-            <i class="fas fa-chevron-right"></i>
-          </a>
-        </li>
-
-        <li class="nav-list-item">
-          <a href="#" class="nav-list-item-link active">Features
-            <i class="fas fa-chevron-right"></i>
-          </a>
-        </li>
-
-        <li class="nav-list-item">
-          <a href="#" class="nav-list-item-link">Pricing
-            <i class="fas fa-chevron-right"></i>
-          </a>
-        </li>
-
-        <li class="nav-list-item">
-          <a href="#" class="nav-list-item-link">Support
-            <i class="fas fa-chevron-right"></i>
-          </a>
-        </li>
-
-        <li class="nav-list-item">
-          <a href="#" class="nav-list-item-link">Contact us
-            <i class="fas fa-chevron-right"></i>
-          </a>
-        </li>
-      </ul>
-      
-      <div class="nav-right">
-        <a href="#" class="nav-right-sign-in on-big">Sign in</a>
-        <a href="#" class="btn btn-primary on-big">GET STARTED</a>
-
-        <a href="#" class="btn btn-primary outline on-small">SIGN IN</a>
-        <a href="#" class="btn btn-primary on-small">DOWNLOAD APP</a>
-      </div>
-    </nav>
-  </header>
-
-  <main class="main">
-    <!-- SECTION HERO -->
-    <section class="section section-hero">
-      <div class="section-hero-main">
-        <p class="section-hero-main-title-small hide-xsm">Team feedback</p>
-        <h1 class="section-hero-main-title">
-          A great new tool to boost
-          Your companies development
-        </h1>
-        <p class="section-hero-main-text">
-          Team feedback is a new kind of corporate feedback tool.
-          A very efficient tool to develop teams, companies and
-          employees. Also called the one click feedback app.
-        </p>
-        <div class="section-hero-main-buttons">
-          <a href="#" class="btn btn-primary outline">GET STARTED</a>
-          <a href="#" class="btn btn-primary">LEARN MORE</a>
-        </div>
-        <div class="section-hero-main-small-text hide-xsm">
-          Basic features free of charge
-        </div>
-      </div>
-      <img class="section section-hero-img" src="./public/img/hero-img-x2.png" alt="Team feedback application screenshot">
-    </section>
-
-    <!-- SECTION VIDEO -->
-    <section class="section section-video">
-      <h2 class="section-video-title">The great new feedback routine</h2>
-      <p class="section-video-text">Very simple, very easy and very efficient. Watch the video to get to know team feedback in 2min.</p>
-     <video controls="true">
-       <source src="./public/video/Dashboard _ Teams _ Main View - Google Chrome 2020-04-15 20-54-12.mp4">
-     </video>
-    </section>
-
-    <!-- SECTION ABOUT -->
-    <section class="section section-about one">
-      <div class="section-about-main">
-        <h2 class="section-about-main-title">Just one click and comment</h2>
-        <p class="section-about-main-text">
-          Let your people give each other feedback
-          with just one click and comment.
-          Very easy, simple and quick.
-        </p>
-        <a href="#" class="section-about-main-link">Click here for an example <i class="fas fa-arrow-right"></i></a>
-      </div>
-
-      <img src="./public/img/give-feedback-x2.png" alt="Give feedback page screenshot" class="section-about-img">
-    </section>
-
-    <section class="section section-about two">
-      <div class="section-about-main">
-        <h2 class="section-about-main-title">Everyone can easily follow his development</h2>
-        <p class="section-about-main-text">
-          Everyone will get much more feedback than at the moment.
-          How was my week, what went well and how to improve?
-          How does my longterm development look like?
-        </p>
-        <a href="#" class="section-about-main-link">Click here for an example <i class="fas fa-arrow-right"></i></a>
-      </div>
-      <img src="./public/img/my-feedback-x2.png" alt="Give feedback page screenshot" class="section-about-img">
-    </section>
-
-    <section class="section section-about three">
-      <div class="section-about-main">
-        <h2 class="section-about-main-title">A very efficient tool for team leaders</h2>
-        <p class="section-about-main-text">
-          Team leaders can easily follow, analyse and compare how their
-          teams are doing. For example in which teams people feel happy,
-          productive and team working goes well and in which teams
-          maybe not. And if not what could be the reason for it.
-        </p>
-        <a href="#" class="section-about-main-link">Click here for an example <i class="fas fa-arrow-right"></i></a>
-      </div>
-
-      <img src="./public/img/team-feedback-x2.png" alt="Give feedback page screenshot" class="section-about-img">
-    </section>
-
-    <section class="section section-about four">
-      <div class="section-about-main">
-        <h2 class="section-about-main-title">A dashboard to get all out of your data</h2>
-        <p class="section-about-main-text">
-          All basic features can be done with the mobile app.
-          For advanced monitoring, analytics and controlling
-          there is the dashboard tool for team leaders.
-        </p>
-        <a href="#" class="section-about-main-link">Click here for an example <i class="fas fa-arrow-right"></i></a>
-      </div>
-
-      <img src="./public/img/dashboard-x2.png" alt="Give feedback page screenshot" class="section-about-img">
-    </section>
-  </main>
-
+    </footer>
 
     <script src="./public/js/main.js"></script>
-</body>
+  </body>
 </html>
