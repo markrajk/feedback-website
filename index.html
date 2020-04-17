@@ -92,13 +92,14 @@
       </nav>
     </header>
 
+
     <main class="main">
       <!-- SECTION HERO -->
       <section class="section section-hero-wrapper">
         <div class="container">
           <div class="section-hero">
             <div class="section-hero-main">
-              <p class="section-hero-main-title-small hide-xsm">Team feedback</p>
+              <p class="section-hero-main-title-small hide-md">Team feedback</p>
               <h1 class="section-hero-main-title">
                 A great new tool to boost Your companies development
               </h1>
@@ -108,10 +109,10 @@
                 called the one click feedback app.
               </p>
               <div class="section-hero-main-buttons">
-                <a href="#" class="btn btn-primary outline">GET STARTED</a>
-                <a href="#" class="btn btn-primary">LEARN MORE</a>
+                <a href="#" class="btn btn-primary">GET STARTED</a>
+                <a href="#" class="btn btn-primary outline">LEARN MORE</a>
               </div>
-              <div class="section-hero-main-small-text hide-xsm">
+              <div class="section-hero-main-small-text hide-md">
                 Basic features free of charge
               </div>
             </div>
@@ -132,11 +133,16 @@
             Very simple, very easy and very efficient. Watch the video to get to
             know team feedback in 2min.
           </p>
-          <video controls="true">
-            <source
-              src="./public/video/Dashboard _ Teams _ Main View - Google Chrome 2020-04-15 20-54-12.mp4"
-            />
-          </video>
+          <div class="video-container">
+            <video controls="true">
+              <source
+                src="./public/video/Dashboard _ Teams _ Main View - Google Chrome 2020-04-15 20-54-12.mp4"
+              />
+            </video>
+            <div class="video-container-play-btn">
+              <i class="fas fa-play-circle"></i>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -194,7 +200,7 @@
           <div class="section-about three">
             <div class="section-about-main">
               <h2 class="section-about-main-title">
-                A very efficient tool for team leaders
+                A very efficient tool<br class="hide-md"> for team leaders
               </h2>
               <p class="section-about-main-text">
                 Team leaders can easily follow, analyse and compare how their teams
