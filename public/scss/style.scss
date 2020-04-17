@@ -873,11 +873,24 @@ body {
       margin-right: 6rem;
       margin-bottom: -1rem;
       max-width: 49rem;
+
+      @include respond(desktop-lg) {
+        margin-right: 0;
+        max-width: 50%;
+      }
     }
 
     & .section-about-img {
       margin-left: -1rem;
       margin-right: auto;
+
+      @include respond(desktop-lg) {
+        max-width: 50%;
+      }
+
+      @include respond(desktop-sm) {
+        max-width: 100%;
+      }
     }
   }
 }

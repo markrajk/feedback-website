@@ -49,12 +49,13 @@ function addEvent(element, evName, fn) {
 
 for (let i = 0; i < menuToggle.length; i++) {
   addEvent(menuToggle[i], 'click', function () {
+    var pos = window.scrollY;
     nav.style.transition = 'transform .5s ease-in-out';
     setTimeout(function () {
       nav.style.transition = 'none';
     }, 500);
     if (nav.classList.contains('onscreen')) {
-      window.scrollTo(0, 0);
+      //window.scrollTo(0, 0);
       nav.classList.remove('onscreen');
       burger.innerHTML = '<i class="fas fa-bars show-xsm"></i>';
     } else {

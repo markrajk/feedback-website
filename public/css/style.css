@@ -537,9 +537,19 @@ body {
     margin-right: 6rem;
     margin-bottom: -1rem;
     max-width: 49rem; }
+    @media (max-width: 1199px) {
+      .section-about.four .section-about-main {
+        margin-right: 0;
+        max-width: 50%; } }
   .section-about.four .section-about-img {
     margin-left: -1rem;
     margin-right: auto; }
+    @media (max-width: 1199px) {
+      .section-about.four .section-about-img {
+        max-width: 50%; } }
+    @media (max-width: 767px) {
+      .section-about.four .section-about-img {
+        max-width: 100%; } }
 
 .section-banner {
   padding: 10rem 0;
