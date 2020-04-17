@@ -121,17 +121,10 @@ body {
 .onscreen {
   transform: translate(0, 0) !important; }
 
-.animate-sticky-header {
-  transform: translate(0, 100%) !important; }
-
-.sticky-header {
-  width: 100%;
-  position: fixed;
-  top: calc(-6.9rem - 1px);
-  left: 0;
-  transition: transform .5s ease-in-out; }
-
 .header {
+  position: sticky;
+  top: 0;
+  left: 0;
   border-bottom: 1px solid #EBEAEB;
   background-color: #FFF; }
   @media (max-width: 991px) {

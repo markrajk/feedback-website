@@ -64,20 +64,20 @@ for (let i = 0; i < menuToggle.length; i++) {
     }
   });
 }
-console.log('TEST!!!');
-window.addEventListener('scroll', function () {
-  if (
-    window.scrollY > 69 &&
-    !header.classList.contains('sticky-header') &&
-    !nav.classList.contains('onscreen')
-  ) {
-    // header.style.transform = 'translate(0,-100%)';
-    header.classList.add('animate-sticky-header');
+// console.log('TEST!!!');
+// window.addEventListener('scroll', function () {
+//   if (
+//     window.scrollY > 69 &&
+//     !header.classList.contains('sticky-header') &&
+//     !nav.classList.contains('onscreen')
+//   ) {
+//     // header.style.transform = 'translate(0,-100%)';
+//     header.classList.add('animate-sticky-header');
 
-    header.classList.add('sticky-header');
-  } else if (window.scrollY === 0) {
-    header.classList.remove('animate-sticky-header');
+//     header.classList.add('sticky-header');
+//   } else if (window.scrollY === 0) {
+//     header.classList.remove('animate-sticky-header');
 
-    header.classList.remove('sticky-header');
-  }
-});
+//     header.classList.remove('sticky-header');
+//   }
+// });
