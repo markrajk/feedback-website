@@ -286,23 +286,34 @@ body {
 .onscreen {
   transform: translate(0,0)!important;
 }
+.animate-sticky-header {
+  transform: translate(0, 100%)!important;
+}
+.sticky-header {
+  width: 100%;
+  position: fixed;
+  top: calc(-6.9rem - 1px);
+  left: 0;
+  transition: transform .5s ease-in-out;
+  //transform: translate(0, 0)!important;
+}
 
 // ==================================
 // LAYOUT
 // ==================================
 .header {
   border-bottom: 1px solid #EBEAEB;
+  background-color: #FFF;
+
 
   @include respond(desktop-md) {
     border: 0;
   }
 
-  .nav {
-    z-index: 1000;
-  }
 
   & .nav,
   & .toolbar {
+    background-color: #FFF;
     padding: 1.2rem 5rem;
     margin: 0 auto;
     height: 6.9rem;
@@ -310,6 +321,7 @@ body {
     @include flexbox;
     font-family: 'Open Sans', sans-serif;
     align-items: center;
+    z-index: 1000;
     
 
     @include respond(desktop-md) {
@@ -694,6 +706,7 @@ body {
     letter-spacing: 0.19px;
   }
   & video {
+   
     margin: 0 auto;
     width: 100%;
     max-width: 80rem;
@@ -704,6 +717,7 @@ body {
     display: inline-block;
     //border: 1px solid $green-primary;
     box-shadow: 0 3px 10px 0 rgba(0,0,0, .3);
+    z-index: -1;
 
     &-play-btn {
       position: absolute;
