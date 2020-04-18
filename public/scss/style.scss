@@ -996,12 +996,13 @@ body {
       }
 
       &-list {
-        
-        margin-right: 5.5rem;
+        min-width: 20%;
+        margin-right: 5rem;
         list-style: none;
 
+
         @include respond(desktop-md) {
-          width: auto;
+          min-width: auto;
           margin-right: 0;
         }
 
@@ -1012,7 +1013,7 @@ body {
         }
 
         &-item {
-
+          white-space: nowrap;
           &-title {
             font-size: 1.4rem;
             font-weight: 700;
