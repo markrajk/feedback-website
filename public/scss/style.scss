@@ -935,9 +935,21 @@ body {
   }
 
   &-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     & .btn:not(:last-of-type) {
       margin-right: 1.5rem;
+
+      @include respond(desktop-xsm) {
+        margin-right: 0;
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    @include respond(desktop-xsm) {
+      flex-direction: column;
     }
   }
 }
@@ -1113,7 +1125,7 @@ body {
   }
 }
 .section-features {
-  padding: 6rem 0;
+  padding: 8rem 0;
   padding-left: 4.3rem;
   padding-right: 1rem;
   display: flex;
@@ -1123,6 +1135,7 @@ body {
 
   @include respond(desktop-md) {
     flex-direction: column;
+    padding: 4rem 0;
     padding-left: 0;
     padding-right: 0;
   }
@@ -1132,14 +1145,13 @@ body {
     padding-right: 3rem;
 
     @include respond(desktop-md) {
-      padding-right: 0;
-      width: 90%;
+      padding-right: 12%;
       display: flex;
       flex-direction: column;
     }
 
     @include respond(desktop-sm) {
-      width: 100%;
+      padding-right: 0;
     }
 
     &-subtitle {
@@ -1273,8 +1285,22 @@ body {
   align-items: center;
   color: #1d1d1d;
 
+  @include respond(desktop-xsm) {
+    flex-direction: column;
+    padding-bottom: 2rem;
+  }
+
   &-card {
     max-width: 46rem;
+
+    @include respond(desktop-md) {
+      width: 40%;
+    }
+
+    @include respond(desktop-xsm) {
+      margin-bottom: 4rem;
+      width: 100%;
+    }
 
     &-title {
       margin-bottom: 1.2rem;
