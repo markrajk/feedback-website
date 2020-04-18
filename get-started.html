@@ -8,24 +8,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Roboto:400,500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e9f50f9a1c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./public/css/pretty-checkbox.css">
     <link rel="stylesheet" href="./public/css/style.css" />
   </head>
   <body>
-  <main class="sign-in">
+  <main class="sign-in get-started">
     <header class="sign-in-header">
       <img class="sign-in-header-img" src="./public/img/team-feedback-logo-only.svg" alt="Team feedback logo">
     </header>
-    <div class="sign-in-card">
-      <h1 class="sign-in-card-title getting-started">Sign in</h1>
+    <div class="sign-in-card get-started">
+      <h1 class="sign-in-card-title get-started">Let's get started</h1>
       <p class="sign-in-card-subtitle">All basic features free of charge.</p>
-      <input type="email" class="sign-in-card-input" placeholder="Your Work Email">
+      <input type="email" class="sign-in-card-input get-started" placeholder="Your Work Email">
       <div class="input-container">
-        <input type="text" class="sign-in-card-input" placeholder="First Name">
-        <input type="text" class="sign-in-card-input" placeholder="Last Name">
+        <input type="text" class="sign-in-card-input get-started" placeholder="First Name">
+        <input type="text" class="sign-in-card-input get-started" placeholder="Last Name">
       </div>
-      <input type="password" class="sign-in-card-input" placeholder="Password">
-      <a href="#" class="btn btn-primary">Sign in</a>
-      <p class="sign-in-card-redirect small">Forgo password? <a href="#">Restore</a></p>
+      <input type="password" class="sign-in-card-input get-started" placeholder="Password">
+      <p class="sign-in-card-password-info">
+        <i class="fas fa-check sign-in-card-password-info-icon"></i>
+        8 character minimum
+      </p>
+      <div class="sign-in-card-check">
+        <div class="pretty p-svg p-curve">
+          <input type="checkbox" />
+          <div class="state p-success">
+              <!-- svg path -->
+              <svg class="svg svg-icon" viewBox="0 0 20 20">
+                  <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+              </svg>
+              <label>&nbsp;</label>
+          </div>
+        </div>
+        <p class="sign-in-card-check-label">
+          I agree to the <a href="#">terms of service</a> and <a href="#">privacy policy.</a>
+        </p>
+      </div>
+      <a href="#" class="btn btn-primary get-started">Get started for free</a>
+      <p class="sign-in-card-redirect small">Already have an account? <a href="./sign-in.html">Sing in</a></p>
     </div>
     <footer class="sign-in-footer">
       <p class="sign-in-footer-text">
