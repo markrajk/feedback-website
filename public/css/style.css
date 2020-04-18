@@ -19,6 +19,9 @@ html {
   @media (max-width: 767px) {
     html {
       font-size: 50%; } }
+  @media (max-width: 379px) {
+    html {
+      font-size: 45%; } }
 
 body {
   box-sizing: border-box;
@@ -881,7 +884,7 @@ body {
   align-items: center;
   justify-content: space-between; }
   .sign-in.get-started {
-    min-height: 78rem; }
+    min-height: 70rem; }
   .sign-in-header {
     width: 100%;
     padding: 1.2rem 1.5rem; }
@@ -899,7 +902,13 @@ body {
     left: 50%;
     transform: translate(-50%, -50%); }
     .sign-in-card.get-started {
-      top: 49%; }
+      top: 47%; }
+      @media (max-width: 767px) {
+        .sign-in-card.get-started {
+          top: 45%; } }
+      @media (max-width: 379px) {
+        .sign-in-card.get-started {
+          top: 49%; } }
     .sign-in-card-title {
       margin-bottom: 1.65rem;
       font-size: 3.1rem;
@@ -968,6 +977,8 @@ body {
       @media (max-width: 379px) {
         .sign-in-card .input-container {
           grid-template-columns: 1fr; } }
+      .sign-in-card .input-container input:last-of-type {
+        margin-bottom: 2rem; }
     .sign-in-card-password-info {
       margin-bottom: 3rem;
       margin-left: .4rem;

@@ -104,9 +104,9 @@ html {
     //   font-size: 45%;
     // }
 
-    // @include respond(desktop-xxsm) {
-    //   font-size: 40%;
-    // }
+    @include respond(desktop-xxsm) {
+      font-size: 45%;
+    }
 }
 
 body {
@@ -1408,7 +1408,7 @@ body {
 
   // GET STARTED
   &.get-started {
-    min-height: 78rem;
+    min-height: 70rem;
   }
 
   &-header {
@@ -1434,7 +1434,15 @@ body {
 
     // GET STARTED
     &.get-started {
-      top: 49%;
+      top: 47%;
+
+      @include respond(desktop-sm) {
+        top: 45%;
+      }
+
+      @include respond(desktop-xxsm) {
+        top: 49%;
+      }
     }
     
     &-title {
@@ -1535,6 +1543,12 @@ body {
       
       @include respond(desktop-xxsm) {
         grid-template-columns: 1fr;
+      }
+
+      & input {
+        &:last-of-type {
+          margin-bottom: 2rem;
+        }
       }
     }
 
