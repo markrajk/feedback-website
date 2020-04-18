@@ -27,7 +27,12 @@ body {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
   color: #1c1c1c;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none; }
+  body::-webkit-scrollbar {
+    width: 0 !important; }
 
 .container {
   padding-left: 5rem;
@@ -670,21 +675,27 @@ body {
 
 .section-features {
   padding: 8rem 0;
+  padding-left: 4.3rem;
+  padding-right: 1rem;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   color: #1d1d1d; }
   @media (max-width: 991px) {
     .section-features {
-      flex-direction: column; } }
+      flex-direction: column;
+      padding-left: 0;
+      padding-right: 0; } }
   .section-features-main {
-    padding-right: 3rem;
-    width: 45%; }
+    padding-right: 3rem; }
     @media (max-width: 991px) {
       .section-features-main {
         padding-right: 0;
-        width: 100%; } }
+        width: 100%;
+        display: flex;
+        flex-direction: column; } }
     .section-features-main-subtitle {
-      margin-bottom: 2rem;
+      margin-bottom: 1.4rem;
       font-family: 'Open Sans', sans-serif;
       font-size: 1.5rem;
       font-weight: 700;
@@ -692,7 +703,7 @@ body {
       letter-spacing: 0.15px;
       color: #141414; }
     .section-features-main-title {
-      margin-bottom: 3.8rem;
+      margin-bottom: 3.4rem;
       font-family: 'Open Sans', sans-serif;
       font-size: 2.9rem;
       font-weight: 700;
@@ -702,33 +713,51 @@ body {
       display: none; }
       @media (max-width: 991px) {
         .section-features-main-img {
+          display: inline-block;
+          width: 100%;
+          max-width: 62.6rem;
+          margin: 0 auto;
           margin-bottom: 2rem;
-          display: inline;
-          width: 100%; } }
+          align-self: center; } }
     .section-features-main-text {
+      max-width: 47rem;
       margin-bottom: 3.2rem;
-      font-size: 1.75rem;
+      font-size: 1.7rem;
       font-weight: 400;
-      line-height: 1.37;
-      letter-spacing: 0.18px; }
+      line-height: 1.41;
+      letter-spacing: 0.17px; }
+      @media (max-width: 991px) {
+        .section-features-main-text {
+          max-width: 100%; } }
     .section-features-main-caption {
-      margin-bottom: 1.2rem;
-      font-size: 1.9rem;
+      margin-bottom: .7rem;
+      font-size: 1.8rem;
       font-weight: 700;
-      line-height: 1.42;
-      letter-spacing: -0.19px; }
+      line-height: 1.5;
+      letter-spacing: -0.18px;
+      text-align: left; }
   .section-features-img {
-    width: 55%; }
+    max-height: 56.57rem; }
     @media (max-width: 991px) {
       .section-features-img {
         display: none; } }
+  .section-features.one {
+    margin-top: 1.1rem;
+    padding-top: 7.2rem; }
+  .section-features.two .section-features-main-title {
+    max-width: 40rem; }
+    @media (max-width: 991px) {
+      .section-features.two .section-features-main-title {
+        max-width: 100%; } }
+  .section-features.three .section-features-main {
+    margin-bottom: -2rem; }
 
 .section-dashboard-wrapper {
   background-color: #f5f5f5; }
 
 .section-dashboard {
   padding-top: 5.5rem;
-  padding-bottom: 8rem;
+  padding-bottom: 6.5rem;
   font-family: 'Open Sans', sans-serif;
   text-align: center; }
   .section-dashboard-subtitle {
@@ -740,14 +769,15 @@ body {
     letter-spacing: 0.15px;
     color: #141414; }
   .section-dashboard-title {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     font-family: 'Open Sans', sans-serif;
     font-size: 2.9rem;
     font-weight: 700;
     line-height: 1.31;
     letter-spacing: -0.44px; }
   .section-dashboard-img {
-    width: 100%; }
+    width: 100%;
+    max-width: 106.5rem; }
 
 .section-info {
   padding-top: 6rem;
@@ -760,10 +790,10 @@ body {
     max-width: 46rem; }
     .section-info-card-title {
       margin-bottom: 1.2rem;
-      font-size: 1.9rem;
+      font-size: 1.8rem;
       font-weight: 700;
-      line-height: 1.42;
-      letter-spacing: -0.19px; }
+      line-height: 1.5;
+      letter-spacing: -0.18px; }
     .section-info-card-text {
       font-size: 1.75rem;
       font-weight: 400;
