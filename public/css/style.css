@@ -948,6 +948,10 @@ body {
   justify-content: space-between; }
   .sign-in.get-started {
     min-height: 69rem; }
+  .sign-in.reset-password-01 {
+    min-height: 50rem; }
+  .sign-in.reset-password-02 {
+    min-height: 65rem; }
   .sign-in-header {
     width: 100%;
     padding: 1.2rem 1.5rem; }
@@ -972,6 +976,16 @@ body {
       @media (max-width: 379px) {
         .sign-in-card.get-started {
           top: 49%; } }
+    .sign-in-card.reset-password-01 {
+      top: 42.4%; }
+    .sign-in-card.reset-password-02 {
+      top: 50%; }
+      @media (max-width: 767px) {
+        .sign-in-card.reset-password-02 {
+          top: 45%; } }
+      @media (max-width: 379px) {
+        .sign-in-card.reset-password-02 {
+          top: 49%; } }
     .sign-in-card-title {
       margin-bottom: 1.65rem;
       font-size: 3.1rem;
@@ -989,6 +1003,18 @@ body {
       line-height: 1.43;
       text-align: center;
       color: #606060; }
+      .sign-in-card-subtitle.reset-password-01 {
+        font-size: 1.9rem;
+        line-height: 1.58; }
+      .sign-in-card-subtitle.reset-password-02 {
+        margin-left: -10rem;
+        margin-right: -10rem;
+        font-size: 1.9rem;
+        line-height: 1.58; }
+        @media (max-width: 575px) {
+          .sign-in-card-subtitle.reset-password-02 {
+            margin-left: 0;
+            margin-right: 0; } }
     .sign-in-card-redirect {
       margin-bottom: 3.58rem;
       font-size: 1.9rem;
@@ -1035,6 +1061,9 @@ body {
         margin-bottom: 2.43rem; }
         .sign-in-card-input.get-started:last-of-type {
           margin-bottom: 1.1rem; }
+      .sign-in-card-input.disabled {
+        opacity: .3;
+        cursor: not-allowed; }
     .sign-in-card .input-container {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -1086,6 +1115,11 @@ body {
       .sign-in-card .btn-primary.get-started {
         padding: 1.3rem 0;
         font-size: 1.7rem; }
+      .sign-in-card .btn-primary.disabled {
+        opacity: .3;
+        cursor: not-allowed; }
+        .sign-in-card .btn-primary.disabled:hover, .sign-in-card .btn-primary.disabled:focus {
+          background-color: #48bc20; }
   .sign-in-footer {
     width: 92%;
     max-width: 120rem;

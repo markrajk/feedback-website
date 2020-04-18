@@ -1489,6 +1489,16 @@ body {
     min-height: 69rem;
   }
 
+  // RESET PASSWORD 01
+  &.reset-password-01 {
+    min-height: 50rem;
+  }
+
+  // RESET PASSWORD 02
+  &.reset-password-02 {
+    min-height: 65rem;
+  }
+
   &-header {
     width: 100%;
     padding: 1.2rem 1.5rem;
@@ -1522,6 +1532,24 @@ body {
         top: 49%;
       }
     }
+
+    // RESET PASSWORD 01
+    &.reset-password-01 {
+      top: 42.4%;
+    }
+
+    // RESET PASSWORD 02
+    &.reset-password-02 {
+      top: 50%;
+
+      @include respond(desktop-sm) {
+        top: 45%;
+      }
+
+      @include respond(desktop-xxsm) {
+        top: 49%;
+      }
+    }
     
     &-title {
       margin-bottom: 1.65rem;
@@ -1546,6 +1574,25 @@ body {
       line-height: 1.43;
       text-align: center;
       color: #606060;
+
+      // RESET PASSWORD 01
+      &.reset-password-01 {
+        font-size: 1.9rem;
+        line-height: 1.58;
+      }
+
+       // RESET PASSWORD 01
+      &.reset-password-02 {
+        margin-left: -10rem;
+        margin-right: -10rem;
+        font-size: 1.9rem;
+        line-height: 1.58;
+
+        @include respond(desktop-xsm) {
+          margin-left: 0;
+          margin-right: 0;
+        }
+      }
     }
 
     &-redirect {
@@ -1614,6 +1661,13 @@ body {
         &:last-of-type {
           margin-bottom: 1.1rem;
         }
+      }
+
+      // DISABLED
+      &.disabled {
+        opacity: .3;
+        // cursor: ;
+        cursor: not-allowed;
       }
     }
 
@@ -1694,6 +1748,18 @@ body {
       &.get-started {
         padding: 1.3rem 0;
         font-size: 1.7rem;
+      }
+
+       // DISABLED
+       &.disabled {
+        opacity: .3;
+        // cursor: ;
+        cursor: not-allowed;
+
+        &:hover,
+        &:focus {
+          background-color: $green-primary;
+        }
       }
     }
   }
