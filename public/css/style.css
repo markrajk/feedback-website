@@ -871,3 +871,112 @@ body {
         color: #1264a3; }
         .section-pricing-main-card-link:hover, .section-pricing-main-card-link:focus {
           text-decoration: underline; }
+
+.sign-in {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; }
+  .sign-in-header {
+    width: 100%;
+    padding: 1.2rem 1.5rem; }
+    .sign-in-header-img {
+      margin-right: auto;
+      width: 5rem;
+      height: 5rem; }
+  .sign-in-card {
+    padding: 0 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    max-width: 43rem;
+    position: absolute;
+    top: 46.2%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .sign-in-card-title {
+      margin-bottom: 1.65rem;
+      font-size: 3.1rem;
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: -0.1px;
+      text-align: center;
+      color: #000000; }
+      .sign-in-card-title.getting-started {
+        margin-bottom: 1.15rem; }
+    .sign-in-card-subtitle {
+      margin-bottom: 3.68rem;
+      font-size: 2.1rem;
+      font-weight: 400;
+      line-height: 1.43;
+      text-align: center;
+      color: #606060; }
+    .sign-in-card-redirect {
+      margin-bottom: 3.58rem;
+      font-size: 1.9rem;
+      font-weight: 500;
+      line-height: 1.58;
+      text-align: center;
+      color: #606060; }
+      .sign-in-card-redirect a {
+        text-decoration: none;
+        font-weight: 600;
+        color: #48bc20; }
+        .sign-in-card-redirect a:hover, .sign-in-card-redirect a:focus {
+          text-decoration: underline; }
+      .sign-in-card-redirect.small {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        margin-bottom: 0;
+        font-size: 1.4rem;
+        line-height: 1.36;
+        text-align: left;
+        color: #707070; }
+        .sign-in-card-redirect.small a {
+          font-weight: 500; }
+    .sign-in-card-input {
+      font-family: 'Roboto', sans-serif;
+      margin-bottom: 2rem;
+      padding: 1.4rem 1.6rem;
+      width: 100%;
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: #1c1c1c;
+      line-height: 1.33;
+      border-radius: 4px;
+      box-shadow: 0 3px 6px 0 rgba(224, 224, 224, 0.07);
+      border: solid 1px #e8e8e8; }
+      .sign-in-card-input:focus {
+        outline-color: #48bc20; }
+      .sign-in-card-input::placeholder {
+        color: #9b9b9b; }
+    .sign-in-card .input-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 0 1rem; }
+    .sign-in-card .btn-primary {
+      font-family: 'Roboto', sans-serif;
+      margin-bottom: 1.9rem;
+      padding: 1.1rem 0;
+      width: 100%;
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: 1.3; }
+  .sign-in-footer {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    line-height: 2.5;
+    color: #868686;
+    width: 92%;
+    max-width: 120rem;
+    padding: .3rem 0 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    border-top: 1.25px solid #EAEAEA; }
+    @media (max-width: 575px) {
+      .sign-in-footer {
+        font-size: .9rem;
+        margin: 0 1.5rem; } }
