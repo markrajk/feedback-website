@@ -1523,10 +1523,6 @@ body {
   }
 
   &-footer {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 500;
-    line-height: 2.5;
-    color: #868686;
     width: 92%;
     max-width: 120rem;
     padding: .3rem 0 5rem;
@@ -1534,11 +1530,18 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 1.2rem;
     border-top: 1.25px solid #EAEAEA;
-    @include respond(desktop-xsm) {
-      font-size: .9rem;
-      margin: 0 1.5rem;
+
+    &-text {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 500;
+      line-height: 2.5;
+      color: #868686;
+
+      @include respond(desktop-xsm) {
+        margin: 0 auto;
+      }
     }
   }
 }
