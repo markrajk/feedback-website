@@ -960,7 +960,10 @@ body {
       line-height: 1.33;
       border-radius: 4px;
       box-shadow: 0 3px 6px 0 rgba(224, 224, 224, 0.07);
-      border: solid 1px #e8e8e8; }
+      border: solid 1px #e8e8e8;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none; }
       .sign-in-card-input:focus {
         outline-color: #48bc20; }
       .sign-in-card-input::placeholder {
