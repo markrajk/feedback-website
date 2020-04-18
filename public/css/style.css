@@ -611,7 +611,8 @@ body {
         .footer-main-right {
           flex-wrap: wrap; } }
       .footer-main-right-list {
-        margin-right: 7rem;
+        width: 25%;
+        margin-right: 5.5rem;
         list-style: none; }
         @media (max-width: 991px) {
           .footer-main-right-list {
