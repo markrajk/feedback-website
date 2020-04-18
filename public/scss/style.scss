@@ -996,11 +996,12 @@ body {
       }
 
       &-list {
-        width: 25%;
+        
         margin-right: 5.5rem;
         list-style: none;
 
         @include respond(desktop-md) {
+          width: auto;
           margin-right: 0;
         }
 

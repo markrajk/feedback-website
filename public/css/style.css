@@ -611,11 +611,11 @@ body {
         .footer-main-right {
           flex-wrap: wrap; } }
       .footer-main-right-list {
-        width: 25%;
         margin-right: 5.5rem;
         list-style: none; }
         @media (max-width: 991px) {
           .footer-main-right-list {
+            width: auto;
             margin-right: 0; } }
         @media (max-width: 575px) {
           .footer-main-right-list {
