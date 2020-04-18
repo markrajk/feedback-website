@@ -301,8 +301,17 @@ body {
       display: flex;
       width: 100%; }
 
+.main-overview .section-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3.9rem;
+  font-weight: 700;
+  line-height: 1.33;
+  letter-spacing: -0.78px; }
+.main-overview .section-text {
+  font-size: 1.8rem; }
+
 .section-hero-wrapper .container {
-  padding-right: 0; }
+  padding-right: 2rem; }
   @media (max-width: 991px) {
     .section-hero-wrapper .container {
       padding-right: 5%; } }
@@ -342,15 +351,9 @@ body {
       line-height: 1.15;
       color: #4a4b4d; }
     .section-hero-main-title {
-      margin-bottom: 3.6rem;
-      font-family: 'Open Sans', sans-serif;
-      font-size: 3.9rem;
-      font-weight: 700;
-      line-height: 1.33;
-      letter-spacing: -1.05px; }
+      margin-bottom: 3.6rem; }
     .section-hero-main-text {
       max-width: 48rem;
-      font-size: 1.85rem;
       line-height: 1.42;
       letter-spacing: 0.19px;
       color: #191919; }
@@ -406,17 +409,15 @@ body {
   .section-video-title {
     margin-bottom: 1.5rem;
     font-family: 'Open Sans', sans-serif;
-    font-size: 4rem;
     font-weight: 700;
     line-height: 1.48;
     letter-spacing: -0.4px; }
   .section-video-text {
     margin-bottom: 3.8rem;
-    font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.44;
     letter-spacing: 0.19px; }
-  .section-video video {
+  .section-video video, .section-video img {
     margin: 0 auto;
     width: 100%;
     max-width: 80rem; }
@@ -454,15 +455,13 @@ body {
       margin: 0 !important;
       max-width: 100% !important; } }
   .section-about-main-title {
-    margin-bottom: 2.4rem;
+    margin-bottom: 2.5rem;
     font-family: 'Open Sans', sans-serif;
-    font-size: 4.4rem;
     font-weight: 700;
     line-height: 1.3;
     letter-spacing: -0.31px; }
   .section-about-main-text {
-    margin-bottom: 1.5rem;
-    font-size: 1.85rem;
+    margin-bottom: 2.5rem;
     font-weight: 400;
     line-height: 1.41;
     letter-spacing: 0.19px; }
@@ -497,6 +496,7 @@ body {
   width: 100%;
   max-width: 97.64rem; }
   .section-about.one .section-about-main {
+    margin-right: 3%;
     max-width: 35rem; }
   .section-about.one .section-about-img {
     margin-right: -.5rem;
@@ -507,6 +507,7 @@ body {
   max-width: 111.4rem;
   flex-direction: row-reverse; }
   .section-about.two .section-about-main {
+    margin-left: 3%;
     margin-bottom: -3rem;
     max-width: 54.1rem; }
   .section-about.two .section-about-img {
@@ -517,6 +518,7 @@ body {
   margin-right: auto;
   max-width: 110.893rem; }
   .section-about.three .section-about-main {
+    margin-right: 3%;
     margin-bottom: -2rem;
     max-width: 54rem; }
   .section-about.three .section-about-img {
@@ -527,6 +529,7 @@ body {
   flex-direction: row-reverse;
   margin-bottom: 17rem; }
   .section-about.four .section-about-main {
+    margin-left: 6%;
     margin-right: 6rem;
     margin-bottom: -1rem;
     max-width: 49rem; }
