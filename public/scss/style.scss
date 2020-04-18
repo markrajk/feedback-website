@@ -46,7 +46,7 @@ $text-color-primary: #1c1c1c;
   }
 
   @if $breakpoint == desktop-xl {
-    @media (max-width: 1439px) {
+    @media (max-width: 1379px) {
       @content;
     }
   }
@@ -83,6 +83,10 @@ $text-color-primary: #1c1c1c;
 html {
   
     font-size: 62.5%;   //1rem = 10px 10px/16 62.5%
+
+    @include respond(desktop-xl) {
+      font-size: 60%;
+    }
 
     @include respond(desktop-lg) {
       font-size: 57.5%;
@@ -563,7 +567,11 @@ body {
 
 .section-hero-wrapper {
   .container {
-    padding-right: 2rem;
+    padding-right: 0rem;
+
+    @include respond(desktop-lg) {
+      padding-right: 2rem;
+    }
 
     @include respond(desktop-md) {
       padding-right: 5%;
@@ -593,7 +601,7 @@ body {
   }
 
   &-main  {
-    max-width: 55.6rem;
+    max-width: 57rem;
 
     @include respond(desktop-lg) {
       width: 50%;

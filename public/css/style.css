@@ -7,6 +7,9 @@
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 1379px) {
+    html {
+      font-size: 60%; } }
   @media (max-width: 1199px) {
     html {
       font-size: 57.5%; } }
@@ -311,7 +314,10 @@ body {
   font-size: 1.8rem; }
 
 .section-hero-wrapper .container {
-  padding-right: 2rem; }
+  padding-right: 0rem; }
+  @media (max-width: 1199px) {
+    .section-hero-wrapper .container {
+      padding-right: 2rem; } }
   @media (max-width: 991px) {
     .section-hero-wrapper .container {
       padding-right: 5%; } }
@@ -333,7 +339,7 @@ body {
     .section-hero {
       padding: 0; } }
   .section-hero-main {
-    max-width: 55.6rem; }
+    max-width: 57rem; }
     @media (max-width: 1199px) {
       .section-hero-main {
         width: 50%; } }
