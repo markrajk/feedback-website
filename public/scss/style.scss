@@ -1220,7 +1220,7 @@ body {
 
   &.one {
     margin-top: 1.1rem;
-    padding-top: 7.2rem;
+    padding-top: 5rem;
   }
 
   &.two {
@@ -1285,6 +1285,10 @@ body {
   align-items: center;
   color: #1d1d1d;
 
+  @include respond(desktop-md) {
+    justify-content: space-between;
+  }
+
   @include respond(desktop-xsm) {
     flex-direction: column;
     padding-bottom: 2rem;
@@ -1294,7 +1298,7 @@ body {
     max-width: 46rem;
 
     @include respond(desktop-md) {
-      width: 40%;
+      width: 45%;
     }
 
     @include respond(desktop-xsm) {

@@ -757,7 +757,7 @@ body {
         display: none; } }
   .section-features.one {
     margin-top: 1.1rem;
-    padding-top: 7.2rem; }
+    padding-top: 5rem; }
   .section-features.two .section-features-main-title {
     max-width: 40rem; }
     @media (max-width: 991px) {
@@ -800,6 +800,9 @@ body {
   justify-content: space-evenly;
   align-items: center;
   color: #1d1d1d; }
+  @media (max-width: 991px) {
+    .section-info {
+      justify-content: space-between; } }
   @media (max-width: 575px) {
     .section-info {
       flex-direction: column;
@@ -808,7 +811,7 @@ body {
     max-width: 46rem; }
     @media (max-width: 991px) {
       .section-info-card {
-        width: 40%; } }
+        width: 45%; } }
     @media (max-width: 575px) {
       .section-info-card {
         margin-bottom: 4rem;
