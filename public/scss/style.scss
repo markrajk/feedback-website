@@ -184,7 +184,8 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 4px;
-  transition: background-color .3s;
+  transition: all .3s ease-in-out;
+  transition-property: background-color, color;
   white-space: nowrap;
   border: solid 1.5px transparent;
 
@@ -224,6 +225,7 @@ body {
 
     &:hover,
     &:focus {
+      color: #FFF;
       background-color: $green-light;
     }
 
@@ -234,7 +236,7 @@ body {
 
       &:hover,
       &:focus {
-        color:$green-primary;
+        color: #FFF;
         background-color: $green-light;
         border-color: $green-light;
 
@@ -700,6 +702,10 @@ body {
     margin-bottom: -1rem;
     width: auto;
     max-width: 62.4rem;
+
+    @include respond(desktop-xl) {
+      margin-right: 0;
+    }
 
     @include respond(desktop-lg) {
       width: 50%;

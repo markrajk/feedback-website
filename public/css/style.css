@@ -60,7 +60,8 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 4px;
-  transition: background-color .3s;
+  transition: all .3s ease-in-out;
+  transition-property: background-color, color;
   white-space: nowrap;
   border: solid 1.5px transparent; }
   .btn-primary {
@@ -87,13 +88,14 @@ body {
     border-radius: 4px;
     background-color: #FFF; }
     .btn-white:hover, .btn-white:focus {
+      color: #FFF;
       background-color: #76dd53; }
     .btn-white.outline {
       color: #FFF;
       border-color: #FFF;
       background-color: transparent; }
       .btn-white.outline:hover, .btn-white.outline:focus {
-        color: #48bc20;
+        color: #FFF;
         background-color: #76dd53;
         border-color: #76dd53; }
 
@@ -418,6 +420,9 @@ body {
     margin-bottom: -1rem;
     width: auto;
     max-width: 62.4rem; }
+    @media (max-width: 1379px) {
+      .section-hero-img {
+        margin-right: 0; } }
     @media (max-width: 1199px) {
       .section-hero-img {
         width: 50%; } }
