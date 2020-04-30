@@ -563,7 +563,7 @@ body {
     }
   
     &-text {
-      font-size: 1.8rem;
+      font-size: 1.75rem;
     }
   }
 }
@@ -723,6 +723,7 @@ body {
 
 .section-video {
   margin-top: 6rem;
+  margin-bottom: 2rem;
   text-align: center;
 
   &-title {
@@ -739,7 +740,6 @@ body {
     font-weight: 400;
     line-height: 1.49;
     letter-spacing: 0.18px;
-    font-size: 1.75rem;
   }
   & video,
   & img {
@@ -778,13 +778,21 @@ body {
   }
 }
 
+.section-about-wrapper {
+  & .container {
+    border-bottom: 1.5px solid #F2F0F2;
+  }
+}
+
 
 .section-about {
-  margin-top: 6.5rem;
+  padding: 4.3rem 0;
+  padding-top: 5;
   display: flex;
   align-items: center;
   //justify-content: center;
-  justify-content: space-between;
+  justify-content: center;
+  
 
   @include respond(desktop-sm) {
     flex-direction: column!important;
@@ -802,25 +810,25 @@ body {
       font-family: 'Open Sans', sans-serif;
       font-weight: 700;
       line-height: 1.3;
-      letter-spacing: -0.31px;
+      letter-spacing: -.4px!important;
     }
 
     &-text {
       margin-bottom: 2.5rem;
       font-weight: 400;
-      line-height: 1.41;
-      letter-spacing: 0.19px;
+      line-height: 1.49;
+      letter-spacing: 0.18px;
     }
 
     &-link {
       text-decoration: none;
       display: inline-flex;
       align-items: center;
-      font-size: 1.8rem;
-      font-weight: 400;
-      line-height: 1.44;
+      font-size: 1.75rem;
+      font-weight: 500;
+      line-height: 1.49;
       letter-spacing: normal;
-      color: #1164a3;
+      color: #0087ed;
 
       &:hover,
       &:focus {
@@ -836,7 +844,7 @@ body {
 
   &-img {
     width: auto;
-    max-height: 51.4rem;
+    max-height: 51.5rem;
 
     
     @include respond(desktop-sm) {
@@ -850,15 +858,21 @@ body {
 
 .section-about {
   &.one {
-    //padding-left: 1rem;
+    // padding-left: 1rem;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    max-width: 96.4rem;
+    max-width: 102.1rem;
+    flex-direction: row-reverse;
 
     & .section-about-main {
-      margin-right: 3%;
-      max-width: 35rem;
+      margin-left: 6.5%;
+      width: 100%;
+      // max-width: 37.2rem;
+
+      // &-text {
+      //   margin-bottom: 3rem;
+      // }
     }
 
     & .section-about-img {
@@ -868,31 +882,34 @@ body {
   }
 
   &.two {
+    padding-left: 1rem;
     margin-left: auto;
     margin-right: auto;
-    max-width: 106rem;
+    max-width: 107.1rem;
     //max-width: 108rem;
-    flex-direction: row-reverse;
+   
 
     & .section-about-main {
-      margin-left: 3%;
-      margin-bottom: -3rem;
-      max-width: 54.1rem;
+      margin-right: 8%;
+      //margin-bottom: -3rem;
+      //max-width:62rem;
     }
 
     & .section-about-img {
-      //margin-left: -1.5rem;
+      margin-right: -2.5rem;
       //margin-right: auto;
     }
   }
 
   &.three {
+    padding-left: 5rem;
     margin-left: auto;
     margin-right: auto;
     max-width: 110.893rem;
+    flex-direction: row-reverse;
 
     & .section-about-main {
-      margin-right: 3%;
+      margin-left: 6%;
       margin-bottom: -2rem;
       max-width: 54rem;
     }
@@ -904,28 +921,28 @@ body {
   }
 
   &.four {
+    padding-left: 1rem;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 3rem;
-    flex-direction: row-reverse;
-    margin-bottom: 17rem;
-    max-width: 120rem;
+    padding-top: 7.5rem;
+    margin-bottom: 7rem;
+    max-width: 113.5rem;
 
     & .section-about-main {
-      margin-left: 3%;
+      margin-right: 6%;
       //margin-right: 6rem;
-      margin-bottom: -1rem;
+      margin-bottom: -2rem;
       max-width: 49rem;
 
       @include respond(desktop-lg) {
-        margin-right: 0;
+        margin-right: 6%;
         max-width: 50%;
       }
     }
 
     & .section-about-img {
       //margin-left: -1rem;
-      //margin-right: auto;
+      margin-right: -1rem;
       max-width: 62.9rem;
 
       @include respond(desktop-lg) {
@@ -941,17 +958,17 @@ body {
 
 .section-banner {
   //margin-top: 17rem;
-  padding: 10rem 0;
+  padding: 10.5rem 0;
   background-color: $green-primary;
   text-align: center;
 
   &-title {
     margin-bottom: 4.1rem;
     font-family: 'Open Sans', sans-serif;
-    font-size: 4.6rem;
+    font-size: 4rem;
     font-weight: 700;
-    line-height: 1.2;
-    letter-spacing: -0.34px;
+    line-height: 1.48;
+    letter-spacing: -0.28px;
     color: #FFF;
   }
 
@@ -960,8 +977,12 @@ body {
     align-items: center;
     justify-content: center;
 
+    // & .btn {
+    //   padding: 1.9rem 3.5rem;
+    // }
+
     & .btn:not(:last-of-type) {
-      margin-right: 1.5rem;
+      margin-right: 1.9rem;
 
       @include respond(desktop-xsm) {
         margin-right: 0;
