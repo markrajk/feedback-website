@@ -224,7 +224,7 @@ body {
 
     &:hover,
     &:focus {
-      background-color: $green-bleak;
+      background-color: $green-light;
     }
 
     &.outline {
@@ -235,8 +235,8 @@ body {
       &:hover,
       &:focus {
         color:$green-primary;
-        background-color: $green-bleak;
-        border-color: $green-bleak;
+        background-color: $green-light;
+        border-color: $green-light;
 
       }
     }
@@ -567,6 +567,9 @@ body {
 }
 
 .section-hero-wrapper {
+  padding: 8.8rem 0;
+  //background-color: #48bc20;
+  background: linear-gradient(107.5deg, rgba(72,188,32,1) 47%, rgba(100,198,66,1) 47%);
   .container {
     padding-right: 0rem;
 
@@ -581,7 +584,7 @@ body {
 }
 
 .section-hero {
-  margin-top: 9rem;
+  color: #FFF;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -617,23 +620,28 @@ body {
 
     &-title-small {
       margin-top: -1.7rem;
-      margin-bottom: 1rem;
+      margin-bottom: 1.3rem;
       font-size: 2rem;
       font-weight: 700;
       line-height: 1.15;
-      color: #4a4b4d;
+      // color: #4a4b4d;
     }
 
     &-title {
+      font-size: 4rem;
       margin-bottom: 3.6rem;
-      
+      line-height: 1.33;
+      letter-spacing: -.3px!important;
+
     }
 
     &-text {
       max-width: 47.5rem;
+      font-size: 1.9rem;
+      font-weight: 500;
       line-height: 1.42;
       letter-spacing: 0.19px;
-      color: #191919;
+      // color: #191919;
 
       @include respond(desktop-md) {
         max-width: 100%;
@@ -642,7 +650,7 @@ body {
 
     &-buttons {
       margin-top: 4.5rem;
-      margin-bottom: 1rem;
+      margin-bottom: 1.3rem;
       display: flex;
       align-items: center;
       
@@ -652,7 +660,7 @@ body {
       }
       
       & .btn {
-        padding: 1.8rem 5.3rem;
+        padding: 1.7rem 4.5rem;
         font-size: 1.5rem;
         font-weight: 700;
         letter-spacing: 0.15px;
@@ -677,18 +685,21 @@ body {
     }
 
     &-small-text {
-      margin-left: 2rem;
+      margin-left: 1.3rem;
       font-family: 'Source Sans Pro', sans-serif;
-      font-size: 1.25rem;
-      line-height: 1.28;
-      letter-spacing: 0.13px;
-      color: #5f5f5f;
+      font-weight: 600;
+      font-size: 1.35rem;
+      line-height: 1.41;
+      letter-spacing: 0.14px;
+      // color: #5f5f5f;
     }
   }
 
   &-img {
+    margin-right: -.5rem;
+    margin-bottom: -1rem;
     width: auto;
-    max-width: 65.4rem;
+    max-width: 62.4rem;
 
     @include respond(desktop-lg) {
       width: 50%;
