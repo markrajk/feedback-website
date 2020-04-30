@@ -865,6 +865,11 @@ body {
     max-width: 102.1rem;
     flex-direction: row-reverse;
 
+    @include respond(desktop-xsm) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
     & .section-about-main {
       margin-left: 6.5%;
       width: 100%;
@@ -873,6 +878,7 @@ body {
       // &-text {
       //   margin-bottom: 3rem;
       // }
+
     }
 
     & .section-about-img {
@@ -887,12 +893,18 @@ body {
     margin-right: auto;
     max-width: 107.1rem;
     //max-width: 108rem;
+
+    @include respond(desktop-xsm) {
+      padding-left: 0;
+      padding-right: 0;
+    }
    
 
     & .section-about-main {
       margin-right: 8%;
       //margin-bottom: -3rem;
       //max-width:62rem;
+
     }
 
     & .section-about-img {
@@ -908,10 +920,16 @@ body {
     max-width: 110.893rem;
     flex-direction: row-reverse;
 
+    @include respond(desktop-xsm) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
     & .section-about-main {
       margin-left: 6%;
       margin-bottom: -2rem;
       max-width: 54rem;
+
     }
 
     & .section-about-img {
@@ -928,6 +946,11 @@ body {
     margin-bottom: 7rem;
     max-width: 113.5rem;
 
+    @include respond(desktop-xsm) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
     & .section-about-main {
       margin-right: 6%;
       //margin-right: 6rem;
@@ -938,6 +961,7 @@ body {
         margin-right: 6%;
         max-width: 50%;
       }
+
     }
 
     & .section-about-img {
