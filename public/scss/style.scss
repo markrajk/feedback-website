@@ -541,7 +541,7 @@ body {
     transform: translate(0,0);
 
     @include respond(desktop-md) {
-      height: 6.9rem;
+      height: 100%;
       display: flex;
     }
 

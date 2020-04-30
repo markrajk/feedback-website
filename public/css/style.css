@@ -308,7 +308,7 @@ body {
     transform: translate(0, 0); }
     @media (max-width: 991px) {
       .header .toolbar {
-        height: 6.9rem;
+        height: 100%;
         display: flex; } }
     .header .toolbar-top {
       display: flex;
